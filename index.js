@@ -15,14 +15,11 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   debugger;
-  let node = document.getElementById('grand-node')
-  let nextNode = node.children[0]
-
-  while (nextNode) {
-    node = nextNode
-    nextNode = node.children[0]
-    console.log(node);
-    console.log(nextNode);
+  var lis=document.getElementById("grand-node").querySelectorAll("div");
+  var test;
+  for(let i=0;i<lis.length-1;i++) {
+    test=lis[i].querySelector("div");
   }
+//You want to return lis[3] --> this passes the test
+return test;
 }
-deepestChild();
