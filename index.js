@@ -22,3 +22,4 @@ function deepestChild() {
     node = nextNode
     nextNode = node.children[0]
   }
+deepestChild();
